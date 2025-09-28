@@ -5,6 +5,7 @@ import { ArrowRight, Code, Brain, Rocket, TrendingUp, CheckCircle, Users, Award,
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function HomePage() {
   const services = [
@@ -174,7 +175,15 @@ export default function HomePage() {
               transition={{ duration: 0.8 }}
             >
               <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div className="h-48 bg-gradient-to-r from-brand-skyblue to-brand-teal"></div>
+                <div className="h-48 bg-gradient-to-r from-brand-skyblue to-brand-teal relative flex items-center justify-center">
+                  <Image 
+                    src="https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755418849/AG_LOGO_2_xfznol.png" 
+                    alt="Papikondalu Tourism Logo" 
+                    width={100} 
+                    height={80} 
+                    className="object-contain"
+                  />
+                </div>
                 <CardHeader>
                   <CardTitle>Bhadrachalam Papikondalu Tourism</CardTitle>
                   <CardDescription>Tourism-focused web platform showcasing river journeys</CardDescription>
@@ -204,9 +213,17 @@ export default function HomePage() {
               transition={{ duration: 0.8 }}
             >
               <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div className="h-48 bg-gradient-to-r from-brand-orange to-brand-goldenrod"></div>
+                <div className="h-48 bg-gradient-to-r from-brand-orange to-brand-goldenrod relative flex items-center justify-center">
+                  <Image 
+                    src="https://slsitskillup.in/wp-content/uploads/2025/04/cropped-SL_T-removebg-preview-1.png" 
+                    alt="SLSIT SkillUp Logo" 
+                    width={100} 
+                    height={80} 
+                    className="object-contain"
+                  />
+                </div>
                 <CardHeader>
-                  <CardTitle>SLS IT SkillUp</CardTitle>
+                  <CardTitle>SLSIT SkillUp</CardTitle>
                   <CardDescription>E-learning portal for IT skills and career growth</CardDescription>
                 </CardHeader>
                 <CardContent>
