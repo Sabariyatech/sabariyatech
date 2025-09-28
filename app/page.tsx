@@ -86,6 +86,9 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
+            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-brand-skyblue/10 to-brand-teal/10 rounded-full border border-brand-skyblue/20 mb-6">
+              <span className="font-semibold text-sm md:text-base"><span className="text-brand-skyblue">✨</span> <span className="text-brand-skyblue">SabariyaTech</span></span>
+            </div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
               <span className="text-gradient">We Flow with Best Tech</span>
               <br />
@@ -280,12 +283,12 @@ export default function HomePage() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
-                className="text-center"
+                className="text-center group cursor-pointer p-6 rounded-xl hover:shadow-lg transition-all duration-300 hover:bg-white/80"
               >
-                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-brand-skyblue to-brand-teal rounded-2xl flex items-center justify-center">
+                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-brand-skyblue to-brand-teal rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <feature.icon className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-brand-skyblue transition-colors duration-300">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </motion.div>
             ))}
