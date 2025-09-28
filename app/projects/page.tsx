@@ -34,9 +34,9 @@ export default function ProjectsPage() {
     },
     {
       id: 2,
-      title: 'SLS IT SkillUp',
+      title: 'SLSIT SkillUp',
       description: 'An interactive e-learning portal designed for IT skills development and career growth with modern UI/UX and comprehensive course management.',
-      longDescription: 'SLS IT SkillUp is a comprehensive e-learning platform that bridges the gap between academic learning and industry requirements. The platform offers structured IT courses, interactive learning modules, student progress tracking, and career guidance resources.',
+      longDescription: 'SLSIT SkillUp is a comprehensive e-learning platform that bridges the gap between academic learning and industry requirements. The platform offers structured IT courses, interactive learning modules, student progress tracking, and career guidance resources.',
       image: '/images/project-2.jpg',
       category: 'Web',
       technologies: ['React', 'Node.js', 'Tailwind CSS', 'Interactive UI', 'Course Management'],
