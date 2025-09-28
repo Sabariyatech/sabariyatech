@@ -62,6 +62,23 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 wave-bg opacity-10"></div>
+        {/* Floating Particles */}
+        <div className="floating-particles">
+          {[...Array(20)].map((_, i) => (
+            <div
+              key={i}
+              className="particle"
+              style={{
+                width: Math.random() * 8 + 4 + 'px',
+                height: Math.random() * 8 + 4 + 'px',
+                left: Math.random() * 100 + '%',
+                top: Math.random() * 100 + '%',
+                animationDelay: Math.random() * 6 + 's',
+                animationDuration: (Math.random() * 3 + 4) + 's'
+              }}
+            />
+          ))}
+        </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

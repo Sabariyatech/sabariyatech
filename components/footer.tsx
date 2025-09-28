@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { Waves, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react'
+import Image from 'next/image'
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react'
 
 export function Footer() {
   return (
@@ -9,7 +10,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Waves className="h-8 w-8 text-brand-skyblue" />
+              <Image src="/images/icons/Logo.png" alt="SabariyaTech" width={64} height={64} className="h-16 w-16 object-contain" />
               <span className="text-xl font-bold">SabariyaTech</span>
             </div>
             <p className="text-gray-400">

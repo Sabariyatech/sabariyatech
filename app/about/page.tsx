@@ -1,7 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Waves, Target, Eye, Users, Calendar, Award } from 'lucide-react'
+import Image from 'next/image'
+import { Target, Eye, Users, Calendar, Award } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 
 export default function AboutPage() {
@@ -109,7 +110,7 @@ export default function AboutPage() {
               className="relative"
             >
               <div className="w-full h-96 bg-gradient-to-br from-brand-skyblue to-brand-teal rounded-2xl flex items-center justify-center">
-                <Waves className="h-24 w-24 text-white opacity-50" />
+                <Image src="/images/icons/Logo.png" alt="SabariyaTech" width={96} height={96} className="h-24 w-24 opacity-50 object-contain" />
               </div>
             </motion.div>
           </div>
@@ -279,7 +280,7 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: Waves, title: 'Flow', description: 'Continuous innovation and adaptation' },
+              { icon: () => <Image src="/images/icons/Logo.png" alt="Flow" width={64} height={64} className="h-16 w-16 object-contain" />, title: 'Flow', description: 'Continuous innovation and adaptation' },
               { icon: Award, title: 'Excellence', description: 'Commitment to quality in everything we do' },
               { icon: Users, title: 'Collaboration', description: 'Working together to achieve great results' },
               { icon: Target, title: 'Focus', description: 'Dedicated attention to client success' }
